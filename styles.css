@@ -1,0 +1,138 @@
+/* ====== General Styles ====== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ====== Header ====== */
+.site-header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+.main-nav a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
+/* ====== Layout ====== */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.main-content {
+  background: #f9f9f9;
+  padding: 1rem;
+}
+
+.sidebar {
+  background: #eee;
+  padding: 1rem;
+}
+
+/* ====== Section Titles ====== */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.2rem;
+}
+
+/* ====== Services Section ====== */
+.services-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.service-card {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.service-card h3 {
+  margin-top: 0;
+}
+
+/* ====== Sidebar Navigation ====== */
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-nav a {
+  padding: 0.5rem;
+  background: #ddd;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  background: #bbb;
+}
+
+/* ====== Footer ====== */
+.site-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ====== Responsive Breakpoints ====== */
+@media (max-width: 768px) {
+  .page-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
